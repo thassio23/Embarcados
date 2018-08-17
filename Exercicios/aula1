@@ -1,1 +1,42 @@
 
+1) O que são sistemas embarcados?
+
+R: Combinação de hardware e software com outros sistemas elétricos com o objetivo de realizar alguma função.
+
+2) O que são sistemas microprocesssados?
+
+R:Sistemas com microcontroladores dedicados ao sistema no qual eles controlam usados para fazer com que funções sejam
+executadas.
+
+3) Apresente aplicações de sistemas embarcados: (a) Para a indústria automotiva; (b) Para eletrodomésticos; (c)
+Para automação industrial.
+
+R: *Automotiva: Controle das parte elétricas do carro como por exemplo a injeção eletrônica, vidros, teto solar, etc.
+
+   *Eletrodomésticos: Controle das funções de um eletrodoméstico como por exemplo, controlar de forma devida a 
+   temperatura de uma geladeira através da análise ambiental com sensores. 
+   
+   *Automação industrial: Simplificar e padronizar a linha de produção de um produto através da automatização devido 
+   aos controles de um sistema embarcado.
+
+4) Cite arquiteturas possíveis e as diferenças entre elas.
+
+R:
+*ASICs: São normalmente projetados e usados para um sistema específico. Eles são muito caros, demandam muito tempo de 
+desenvolvimento e muitos recursos. Em contra partida oferecerem um altíssimo desempenho aliado a um baixo consumo de
+energia.
+
+*ASSP: Circuitos integrados para uma aplicação específica padrão ASSPs (Application-specific standard parts) são projetados
+e implementados exatamente da mesma forma que ASICs. Isto não é surpreendente, pois são essencialmente a mesma coisa.
+A única diferença é que um ASSP é um dispositivo de propósito mais geral e é usado por diferentes sistemas em diferentes
+projetos. Por exemplo, um chip de interface USB pode ser classificado como um ASSP.
+
+*FPGA: Capacidade de configurarmos seu hardware para desempenhar qualquer combinação de funções digitais que desejarmos.
+Também podemos implementar algoritmos de forma paralela, o que significa que podemos processar uma enorme quantidade de 
+dados de forma rápida e eficiente.
+
+5) Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
+
+Porque a Raspberry Pi é um computador de certa forma barato que roda kernel linux que é um dos escopos do 
+matéria.A Raspberry também possui muito conteudo na internet, ou seja, durante o curso, várias duvidas 
+podem sersolucioandas com pesquisa , tornanda o dispositivo muito didático.
