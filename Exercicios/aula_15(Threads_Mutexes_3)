@@ -1,0 +1,11 @@
+Apresente as características e utilidades das seguintes funções:
+(a) popen()
+
+(b) pclose()
+
+(c) fileno()
+
+Quais são as vantagens e desvantagens em utilizar:
+(a) popen()?
+
+(b) exec()?
