@@ -1,0 +1,4 @@
+FILE *ls = popen("ls", "r");
+char buf[256];
+while (fgets(buf, sizeof(buf), ls) != 0) {
+}
