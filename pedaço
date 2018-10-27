@@ -1,4 +1,16 @@
 FILE *ls = popen("ls", "r");
+
+recebe[55];
 char buf[256];
-while (fgets(buf, sizeof(buf), ls) != 0) {
+
+while (1) {
+
+fgets(recebe, 1024, (FILE*)fp);
+if(strcmp(recebe,proximo) == 0){
+
+break;
 }
+
+}
+
+return recebe;
