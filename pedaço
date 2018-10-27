@@ -5,7 +5,7 @@ char buf[256];
 
 while (1) {
 
-fgets(recebe, 1024, (FILE*)fp);
+fgets(recebe, 1024, ls);
 if(strcmp(recebe,proximo) == 0){
 
 break;
