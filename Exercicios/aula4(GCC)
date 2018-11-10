@@ -8,22 +8,112 @@ $ Ola Eu
 Apresente os comportamentos do código anterior nos seguintes casos:
 (a) Se o usuário insere mais de um nome.
 
+#include <stdio.h>
+
+int main(int argc, char **argv){
+	
+	int i = 1;
+
+	printf("Olá ");
+	while(i!=argc){
+		printf("%s ", argv[i]);
+		i++;;
+	}
+	printf("\n");
+
+	return 0;
+}
+
 $ ./ola_usuario_1
 $ Digite o seu nome: Eu Mesmo
 (b) Se o usuário insere mais de um nome entre aspas duplas. Por exemplo:
+
+int main(int argc, char **argv){
+	
+	int i = 1;
+
+	printf("Olá ");
+	while(i!=argc){
+		printf("%s ", argv[i]);
+		i++;;
+	}
+	printf("\n");
+
+	return 0;
+}
 
 $ ./ola_usuario_1
 $ Digite o seu nome: "Eu Mesmo"
 (c) Se é usado um pipe. Por exemplo:
 
+int main(int argc, char **argv){
+	
+	int i = 1;
+
+	printf("Olá ");
+	while(i!=argc){
+		printf("%s ", argv[i]);
+		i++;;
+	}
+	printf("\n");
+
+	return 0;
+}
+
 $ echo Eu | ./ola_usuario_1
 (d) Se é usado um pipe com mais de um nome. Por exemplo:
+
+int main(int argc, char *argv){
+	
+	char conteudo[100];
+	char nome_arquivo[20];
+
+	printf("Nome do arquivo: ");
+	scanf("%s",nome_arquivo);
+	
+	le_arq_texto(nome_arquivo,conteudo);
+
+	printf("%s",conteudo);
+
+	return 0;
+}
 
 $ echo Eu Mesmo | ./ola_usuario_1
 (e) Se é usado um pipe com mais de um nome entre aspas duplas. Por exemplo:
 
+int main(int argc, char **argv){
+	
+	int ocorrencia;
+	char nome_arquivo[20];
+	char palavra_chave[20];
+
+	sprintf(palavra_chave,"%s",argv[1]);
+	sprintf(nome_arquivo,"%s",argv[2]);
+
+	ocorrencia = grep_false(nome_arquivo,palavra_chave);
+
+	printf("%d\n",ocorrencia);
+
+	return 0;
+}
+
 $ echo "Eu Mesmo" | ./ola_usuario_1
 (f) Se é usado o redirecionamento de arquivo. Por exemplo:
+
+
+int main(int argc, char **argv){
+	
+	char conteudo[100];
+	char nome_arquivo[20];
+
+	sprintf(nome_arquivo,"%s",argv[1]);
+	
+	le_arq_texto(nome_arquivo,conteudo);
+
+	printf("%s",conteudo);
+
+	return 0;
+}
 
 $ echo Ola mundo cruel! > ola.txt
 $ ./ola_usuario_1 < ola.txt
