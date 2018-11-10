@@ -1,0 +1,22 @@
+1) Defina qual modelo de Raspberry Pi você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+
+Raspberry pi 3 B  com Raspbian : Este modelo de raspberry consegue rodar tranquilamente programas feitos em C++
+
+2) Defina qual sistema operacional você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+
+O Raspbian por conseguir rodar o QT tranquilamente
+
+3) Defina de qual forma você instalará o sistema operacional escolhido. Escreva o passo-a-passo da instalação e forneça os links necessários para isto.
+
+Através do NooBs
+
+4) Defina de qual forma você desenvolverá software para o Raspberry Pi no projeto desta disciplina. Escreva o passo-a-passo do desenvolvimento e forneça os links necessários para isto.
+
+Criar um programa que roda em C++ que consegue escutar comandos de voz e sintetizar voz.
+O reconhecimento de voz será feito pelo Snips e a sintetização pelo gTTS
+
+Com Raspbian: https://www.raspberrypi.org/downloads/
+Através do QT : https://www.qt.io/
+Snips   : https://snips.ai/
+gTTS: https://pypi.org/project/gTTS/
+
