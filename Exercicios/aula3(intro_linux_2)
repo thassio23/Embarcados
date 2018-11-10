@@ -1,10 +1,69 @@
 Escreva o texto "Ola mundo cruel!" em um arquivo denominado "Ola_mundo.txt". Apresente o conteúdo deste arquivo no terminal.
 
+#include <stdio.h>
+
+int main(int argc, char **argv){
+	
+	printf("Olá Mundo\n");
+
+	return 0;
+}
+
 Apresente o nome de todos os arquivos e pastas na pasta 'root'.
+
+#include <stdio.h>
+
+int main(int argc, char **argv){
+	char nome[20];
+
+	printf("Digite o seu nome: ");
+	scanf("%s",nome);
+	printf("Ola %s\n", nome);
+
+	return 0;
+}
 
 Apresente o tipo de todos os arquivos e pastas na pasta 'root'.
 
+#include <stdio.h>
+#include "num_caracs.h"
+
+int main(int argc, char **argv){
+
+	int i = 0;
+	int total = 0;
+
+	while(i!=argc){
+		total += num_caracs(argv[i]);
+		i++;
+	}
+
+	printf("Total de caracteres de entrada: %d\n", total);
+	
+	
+	return 0;
+}
+
 Apresente somente as pastas dentro da pasta 'root'.
+
+#include <stdio.h>
+#include "num_caracs.h"
+
+int main(int argc, char **argv){
+
+	int i = 0;
+	int total = 0;
+
+	while(i!=argc){
+		total += num_caracs(argv[i]);
+		i++;
+	}
+
+	printf("Total de caracteres de entrada: %d\n", total);
+	
+	
+	return 0;
+}
 
 Descubra em que dia da semana caiu o seu aniversário nos últimos dez anos.
 
@@ -12,14 +71,126 @@ Para as questões a seguir, use a pasta no endereço https://github.com/DiogoCae
 
 Liste somente os arquivos com extensão .txt.
 
+#include <stdio.h>
+
+int main(int argc, char **argv){
+	
+	int i = 1;
+
+	printf("Argumentos: ");
+	while(i!=argc){
+		printf("%s ", argv[i]);
+		i++;;
+	}
+	printf("\n");
+
+	return 0;
+}
+
 Liste somente os arquivos com extensão .png.
+
+#include <stdio.h>
+
+int main(int argc, char **argv){
+	
+	int i = 1;
+
+	printf("Argumentos: ");
+	while(i!=argc){
+		printf("%s ", argv[i]);
+		i++;;
+	}
+	printf("\n");
+
+	return 0;
+}
 
 Liste somente os arquivos com extensão .jpg.
 
+#include <stdio.h>
+
+int main(int argc, char **argv){
+	
+	int i = 1;
+
+	printf("Argumentos: ");
+	while(i!=argc){
+		printf("%s ", argv[i]);
+		i++;;
+	}
+	printf("\n");
+
+	return 0;
+}
+
 Liste somente os arquivos com extensão .gif.
+
+#include <stdio.h>
+
+int main(int argc, char **argv){
+	
+	int i = 1;
+
+	printf("Argumentos: ");
+	while(i!=argc){
+		printf("%s ", argv[i]);
+		i++;;
+	}
+	printf("\n");
+
+	return 0;
+}
 
 Liste somente os arquivos que contenham o nome 'cal'.
 
+#include <stdio.h>
+
+int main(int argc, char **argv){
+	
+	int i = 1;
+
+	printf("Argumentos: ");
+	while(i!=argc){
+		printf("%s ", argv[i]);
+		i++;;
+	}
+	printf("\n");
+
+	return 0;
+}
+
 Liste somente os arquivos que contenham o nome 'tux'.
 
+#include <stdio.h>
+
+int main(int argc, char **argv){
+	
+	int i = 1;
+
+	printf("Argumentos: ");
+	while(i!=argc){
+		printf("%s ", argv[i]);
+		i++;;
+	}
+	printf("\n");
+
+	return 0;
+}
+
 Liste somente os arquivos que comecem com o nome 'tux'.
+
+#include <stdio.h>
+
+int main(int argc, char **argv){
+	
+	int i = 1;
+
+	printf("Argumentos: ");
+	while(i!=argc){
+		printf("%s ", argv[i]);
+		i++;;
+	}
+	printf("\n");
+
+	return 0;
+}
